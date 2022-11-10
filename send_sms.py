@@ -2,8 +2,8 @@ from twilio.rest import Client
 import datetime
 from datetime import timedelta
 
-account_SID = "ACf3176b8baa00707c6b4acbf7059a77d3"
-authentication = "ebef333c44b7ca186f1effc93cc75226"
+account_SID = "REMOVED FOR PRIAVY REASONS"
+authentication = "REMOVED FOR PRIAVY REASONS"
 client = Client(account_SID, authentication)
 todays_date = datetime.date.today()
 
@@ -13,8 +13,8 @@ def send_message(message):
     # account to send SMS to any phone number
     print("Sending message...")
 
-    client.messages.create(to="+16502791844",
-                           from_="13309752511",
+    client.messages.create(to="MY NUMBER",
+                           from_="SPOOFED TWILIO NUMBER",
                            body=message)
 
 def main():
